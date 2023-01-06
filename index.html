@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth duration-700" style="font-family: 'Jura', sans-serif;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+    <nav class="text-white font-light w-screen h-20 fixed top-0 flex justify-between items-center bg-blue-700 bg-opacity-60">
+        <!-- LOGO -->
+        <a href="/">
+            <img src="tm-logo.png" alt="Trujillio Media" class="h-10 pt-2 pl-8 sm:h-16"/>
+        </a>
+        <div class="hidden sm:flex ">
+            <ul class="flex text-xl pr-12">
+                <a href="#about">
+                    <li class="px-4 hover:scale-125  hover:text-blue-300 duration-700">About</li>
+                </a>
+                <a href="#services">
+                    <li class="px-4 hover:scale-125  hover:text-blue-300 duration-700">Services</li>
+                </a>
+                <a href="#contact">
+                    <li class="px-4 hover:scale-125  hover:text-blue-300 duration-700">Contact</li>
+                </a>
+            </ul>
+        </div>
+
+
+        <!-- MOBILE NAVIGATION -->
+        <div class="sm:hidden pr-8">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 fill-white">
+                <path fill-rule="evenodd" d="M3 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 5.25zm0 4.5A.75.75 0 013.75 9h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 9.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+              </svg>
+
+              <ul class="hidden text-xl pr-12">
+                <a href="#about">
+                    <li class="px-4 hover:scale-125  hover:text-blue-300 duration-700">About</li>
+                </a>
+                <a href="#services">
+                    <li class="px-4 hover:scale-125  hover:text-blue-300 duration-700">Services</li>
+                </a>
+                <a href="#contact">
+                    <li class="px-4 hover:scale-125  hover:text-blue-300 duration-700">Contact</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="h-screen bg-[#18181820] flex flex-col items-center justify-center"
+    style=" background: linear-gradient(
+        rgba(0, 0, 0, 0.20), 
+        rgba(0, 0, 0, 1)
+      ), url(hero.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div class=" p-4 flex flex-col items-center max-w-[950px]">
+            <h1 class=" whitespace-nowrap text-white text-center underline underline-offset-8 decoration-blue-700 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Elevate Your Business</h1>
+            <p class=" text-white text-center max-w-full mt-14 px-8 text-2xl sm:text-2xl md:5xl">Our expeirenced team can take you to new heights with immersive design and the latest technologies, providing effective and versatile solutions for all of your web and media needs</p>
+            <div class="w-[450px] flex flex-col sm:flex-row justify-between mt-12 items-center">
+                <a href="#about">
+                    <button class="w-[175px] text-2xl text-blue-700 bg-white border-4 border-gray-400 px-5 py-2 my-2 rounded-md hover:bg-[#ffffff55] hover:border-blue-700 hover:scale-125 duration-500 hover:text-white">Learn More</button>
+                </a>
+                <a href="#services">
+                    <button class="w-[175px] text-2xl text-blue-700 bg-white border-4 border-gray-400 px-5 py-2 my-2 rounded-md hover:bg-[#ffffff55] hover:border-blue-700 hover:scale-125 duration-500 hover:text-white">Services</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section 
+    style="background-image: url(about.jpg); background-position: center; background-size: cover;"
+    id="about" class="h-screen w-screen">
+    <h1 class=" whitespace-nowrap text-white text-center sm:py-18 py-20 underline underline-offset-8 decoration-blue-700 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">About us</h1>
+
+            <p class="px-20 py-16 font-extrabold text-center text-md sm:text-xl md:text-2xl lg:text-3xl">Have you ever woken up and thought to yourself, "I'm so tired of going to this deadend job where I am overworked and berated for minimum pay?" Well maybe not like that but we have. Our founder, Andrew, couldn't stand working himself into the ground day after day for a company that would replace him if he didn't show up. Now, with our own brand, we can bring the same work ethic but this time for a much better payoff. The point we are making is that we're driven, motivated, educated, and ready to follow our dream. YOU are a part of that dream. If we didn't have loyal and loving clients such as yourself, we couldn't do this. So it is with great honor that we take care of your next project with the upmost care and passion.</p>
+    </section>
+
+<!-- SERVICES -->
+    <section 
+    style="background: url(services.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;"
+    id="services" class="h-screen w-screen flex items-center justify-center flex-col">
+        <h1 class=" whitespace-nowrap text-white text-center underline underline-offset-8 decoration-blue-700 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Services</h1>
+        <div class="w-5/6 h-4/6 mt-10 border-2 bg-blue-100 bg-opacity-70 rounded-lg flex flex-col sm:flex-row gap-8 p-5 overflow-x-auto">
+            <div class=" sm:min-w-[425px] min-h-[300px] border-2 bg-gray-600 rounded-lg flex flex-col items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-20 h-20 mt-6">
+                    <path fill-rule="evenodd" d="M2.25 5.25a3 3 0 013-3h13.5a3 3 0 013 3V15a3 3 0 01-3 3h-3v.257c0 .597.237 1.17.659 1.591l.621.622a.75.75 0 01-.53 1.28h-9a.75.75 0 01-.53-1.28l.621-.622a2.25 2.25 0 00.659-1.59V18h-3a3 3 0 01-3-3V5.25zm1.5 0v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5z" clip-rule="evenodd" />
+                  </svg>
+                  <p class="text-2xl mt-4 text-white underline decoration-4 underline-offset-8 decoration-blue-700">Web Design</p>
+                  <ul class="text-center my-auto flex flex-col items-center justify-between">
+                    <li class=" mb-2 font-bold text-lg sm:text-2xl py-2">Clean, user friendly UX/UI</li>
+                    <li class="mb-2 font-bold text-lg sm:text-2xl py-2">Sleek, modern design</li>
+                    <li class="mb-2 font-bold text-lg sm:text-2xl py-2">Custom themes, fonts, images etc.</li>
+                  </ul>
+            </div>
+            <div class=" sm:min-w-[425px] min-h-[300px] border-2 bg-gray-600 rounded-lg flex flex-col items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-20 h-20 mt-6">
+                    <path fill-rule="evenodd" d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0112 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 017.5 5.455V5.25zm7.5 0v.09a49.488 49.488 0 00-6 0v-.09a1.5 1.5 0 011.5-1.5h3a1.5 1.5 0 011.5 1.5zm-3 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
+                    <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z" />
+                  </svg>
+                  
+                <p class="text-2xl mt-4 text-white underline decoration-4 underline-offset-8 decoration-blue-700">Media Cosnultation</p>
+                <ul class="text-center my-auto flex flex-col items-center justify-between">
+                    <li class=" mb-2 font-bold text-lg sm:text-2xl py-2">Platform metrics</li>
+                    <li class="mb-2 font-bold text-lg sm:text-2xl py-2">Audience expansion</li>
+                    <li class="mb-2 font-bold text-lg sm:text-2xl py-2">Oportunities for monetization</li>
+                  </ul>
+            </div>
+            <div class=" sm:min-w-[425px] min-h-[300px] border-2 bg-gray-600 rounded-lg flex flex-col items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-20 h-20 mt-6">
+                    <path d="M12 9a3.75 3.75 0 100 7.5A3.75 3.75 0 0012 9z" />
+                    <path fill-rule="evenodd" d="M9.344 3.071a49.52 49.52 0 015.312 0c.967.052 1.83.585 2.332 1.39l.821 1.317c.24.383.645.643 1.11.71.386.054.77.113 1.152.177 1.432.239 2.429 1.493 2.429 2.909V18a3 3 0 01-3 3h-15a3 3 0 01-3-3V9.574c0-1.416.997-2.67 2.429-2.909.382-.064.766-.123 1.151-.178a1.56 1.56 0 001.11-.71l.822-1.315a2.942 2.942 0 012.332-1.39zM6.75 12.75a5.25 5.25 0 1110.5 0 5.25 5.25 0 01-10.5 0zm12-1.5a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
+                </svg>
+                <p class="text-2xl mt-4 text-white underline decoration-4 underline-offset-8 decoration-blue-700">Photography</p>
+                <ul class="text-center my-auto flex flex-col items-center justify-between">
+                    <li class=" mb-2 font-bold text-lg sm:text-2xl py-2">Top of the line tools/software</li>
+                    <li class="mb-2 font-bold text-lg sm:text-2xl py-2">Hospitable and patient photographer</li>
+                    <li class="mb-2 font-bold text-lg sm:text-2xl py-2">Experience with mutiple subject types</li>
+                  </ul>
+            </div>
+            <div class=" sm:min-w-[425px] min-h-[300px] border-2 bg-gray-600 rounded-lg flex flex-col items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-20 h-20 mt-6">
+                    <path fill-rule="evenodd" d="M2.25 2.25a.75.75 0 000 1.5H3v10.5a3 3 0 003 3h1.21l-1.172 3.513a.75.75 0 001.424.474l.329-.987h8.418l.33.987a.75.75 0 001.422-.474l-1.17-3.513H18a3 3 0 003-3V3.75h.75a.75.75 0 000-1.5H2.25zm6.54 15h6.42l.5 1.5H8.29l.5-1.5zm8.085-8.995a.75.75 0 10-.75-1.299 12.81 12.81 0 00-3.558 3.05L11.03 8.47a.75.75 0 00-1.06 0l-3 3a.75.75 0 101.06 1.06l2.47-2.47 1.617 1.618a.75.75 0 001.146-.102 11.312 11.312 0 013.612-3.321z" clip-rule="evenodd" />
+                  </svg>
+                  <p class="text-2xl mt-4 text-white underline decoration-4 underline-offset-8 decoration-blue-700">Brand Development</p>
+                  <ul class="text-center my-auto flex flex-col items-center justify-between">
+                    <li class=" mb-2 font-bold text-lg sm:text-2xl py-2">Demographic recognition</li>
+                    <li class="mb-2 font-bold text-lg sm:text-2xl py-2">Colaboration opportunities</li>
+                    <li class="mb-2 font-bold text-lg sm:text-2xl py-2 underline text-red-600">Coming soon!</li>
+                  </ul>
+            </div>
+        </div>
+    </section>
+
+<!-- CONTACT -->
+    <section id="contact" class="h-screen w-screen flex flex-col justify-center items-center px-8"
+    style="background:linear-gradient(
+        rgba(255, 255, 255, 0.20),
+        rgba(0, 0, 0, 0.60)
+        ), url(client.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+        <div class="h-4/6 w-full max-w-[650px] rounded-lg border-2 bg-[#ffffff55] shadow-lg shadow-slate-500 backdrop-blur-sm flex flex-col px-12">
+                <form class="flex flex-col">
+                    <h2 class="py-4 mx-14 text-white text-center font-light text-xl sm:text-3xl xl:text-4xl border-b-2 border-blue-900 mb-2">Contact Us</h2>
+                    <p class=" text-center text-lg sm:text-2xl xl:text-2xl mb-8">Tell us what we can do for you</p>
+                    <input required autocomplete="off"  type="text" name="name" placeholder="Name" class="my-2 bg-blue-100 px-4 text-xl">
+                    <input required type="email" name="email" placeholder="Email" class="my-2 bg-blue-100 px-4 text-xl">
+                    <textarea required name="message" rows="8" placeholder="Message" class="my-2  bg-blue-100 px-4 text-xl"></textarea>
+                    <button type="submit" class="w-[175px] h-12 text-lg text-blue-700 bg-white border-4 border-gray-400 px-4 py-2 my-4 mx-auto rounded-md hover:bg-[#ffffff55] hover:border-blue-700 hover:scale-125 duration-500 hover:text-white">Let's Connect</button>
+
+                </form>
+            
+        </div>
+    </section>
+
+</body>
+</html>
